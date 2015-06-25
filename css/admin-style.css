@@ -1,0 +1,148 @@
+.timecc{
+    display: inline-block;
+    width: 100%;
+}
+.timecc select{
+    width: 40px!important;
+    margin: 3px 0 2px!important;
+}
+.timecc label{
+    margin: auto 1px!important;
+}
+/** Settings page */
+#tabs{
+    margin-top: 30px;
+}
+#settings-headers{
+    width: 95%;
+    position: relative;
+    margin: 15px auto;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+#settings-headers tr td,#settings-headers tr th{
+    /*border: 1px solid #CCCCCC;*/
+}
+#httpfil{
+    margin-top: 10px;
+    border: 3px solid #CCCCCC;
+    border-radius: 7px;
+}
+#httpleg{
+    margin: auto auto auto 30px;
+    padding: 0 10px 0 25px;
+}
+.httpth{
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ececec;
+    background: #ececec;    
+    background: -moz-linear-gradient(top, #F9F9F9, #ECECEC);
+    background: -webkit-linear-gradient(top, #F9F9F9, #ECECEC);
+    background: -o-linear-gradient(top, #F9F9F9, #ECECEC);
+    background: -ms-linear-gradient(top, #F9F9F9, #ECECEC);
+    background: linear-gradient(top, #F9F9F9, #ECECEC); 
+}
+.httpth:first-child{
+    border-radius: 4px 0 0 0;
+}
+.httpth:last-child{
+    border-radius: 0 4px 0 0;
+}
+td.tit{
+    text-align: center;
+    width: 130px;
+    border: 1px solid #CCCCCC;
+}
+td.lab{
+    text-align: center;
+    width: 150px;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+td.inp{
+    text-align: left;
+    width: 300px;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+td.inp input, td.inp select{
+    margin: 1px auto 1px 15px;
+    text-align: center;
+    width: 90%;
+    min-width: 120px;
+    
+}
+.titlepage{
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+#url-for-headers{
+    position: relative;
+    margin: 3px auto;
+}
+.url-for-headers-a,.url-for-headers-a:visited{
+    color: blue!important;
+}
+td.res{
+    border: 1px solid #CCCCCC;
+    text-align: center;
+}
+.tdfirst{
+    border-top: 1px solid #CCCCCC;
+}
+.tdlast{
+    border-bottom: 1px solid #CCCCCC;
+}
+#slider-range-min-index,
+#slider-range-min-single,
+#slider-range-min-page,
+#slider-range-min-author,
+#slider-range-min-cat,
+#slider-range-min-serch,
+#slider-range-min-tag{
+    position: relative;
+    margin: 5px auto;
+}
+.headers_http_avk{
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    text-align: left;
+}
+#loaderImage{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+    width: 23px;
+    height: 23px;
+    background: url("images/loading.gif") 0 0 no-repeat;
+    opacity: 0;
+}
+#http_submit{
+    margin:20px auto;
+}
+.dashicons-http{
+    vertical-align: top;
+    padding-right: 7px;
+}
+.donate-form{
+    display: inline-block;
+    float: right;
+    position: relative;
+    z-index: 9999;
+    top: 10px;
+    right: 10px;
+}
+.donate-form form{
+    padding: 0;
+    margin: 0;
+}
+.donate-form form input[type="image"]{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.donate-form form input[type="image"]:focus{
+    outline: none;
+}

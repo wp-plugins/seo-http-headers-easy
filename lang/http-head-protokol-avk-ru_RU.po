@@ -1,0 +1,154 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SEO-HTTP-Headers-Easy\n"
+"POT-Creation-Date: 2015-06-20 02:35+0300\n"
+"PO-Revision-Date: 2015-06-23 07:43+0300\n"
+"Last-Translator: Smiling_Hemp <support@avkproject.ru>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\\\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: pages/settings_menu.php:12
+msgid "PayPal - the safer, easier way to pay online!"
+msgstr "PayPal — более безопасный и легкий способ оплаты через Интернет!"
+
+#: pages/settings_menu.php:15 seo_http_headers.class.php:96
+msgid "HTTP 1.1 headers"
+msgstr "Заголовки HTTP 1.1"
+
+#: pages/settings_menu.php:19
+msgid "HOME"
+msgstr "ДОМАШНЯЯ"
+
+#: pages/settings_menu.php:20
+msgid "SINGLE"
+msgstr "ЗАПИСЬ"
+
+#: pages/settings_menu.php:21
+msgid "PAGE"
+msgstr "СТРАНИЦА"
+
+#: pages/settings_menu.php:22
+msgid "AUTHOR"
+msgstr "АВТОР"
+
+#: pages/settings_menu.php:23
+msgid "CATEGORY"
+msgstr "КАТЕГОРИЯ"
+
+#: pages/settings_menu.php:24
+msgid "TAG"
+msgstr "ТЭГ"
+
+#: pages/settings_menu.php:25
+msgid "SEARCH"
+msgstr "ПОИСК"
+
+#: pages/settings_menu.php:49
+#, php-format
+msgid " To %scheck%s headings"
+msgstr "%sПроверить%s заголовки"
+
+#: pages/settings_menu.php:52
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: pages/t_autor.php:9 pages/t_autor.php:36 pages/t_category.php:9
+#: pages/t_category.php:36 pages/t_index.php:9 pages/t_index.php:36
+#: pages/t_page.php:9 pages/t_page.php:36 pages/t_search.php:9
+#: pages/t_search.php:36 pages/t_single.php:9 pages/t_single.php:36
+#: pages/t_tag.php:9 pages/t_tag.php:36
+msgid "Send"
+msgstr "Послать"
+
+#: pages/t_autor.php:10 pages/t_autor.php:37 pages/t_category.php:10
+#: pages/t_category.php:37 pages/t_index.php:10 pages/t_index.php:37
+#: pages/t_page.php:10 pages/t_page.php:37 pages/t_search.php:10
+#: pages/t_search.php:37 pages/t_single.php:10 pages/t_single.php:37
+#: pages/t_tag.php:10 pages/t_tag.php:37
+msgid "Do not send"
+msgstr "Не посылать"
+
+#: pages/t_autor.php:19 pages/t_category.php:19 pages/t_index.php:19
+#: pages/t_page.php:19 pages/t_search.php:19 pages/t_single.php:19
+#: pages/t_tag.php:19
+msgid "Cache"
+msgstr "Кэшировать"
+
+#: pages/t_autor.php:20 pages/t_category.php:20 pages/t_index.php:20
+#: pages/t_page.php:20 pages/t_search.php:20 pages/t_single.php:20
+#: pages/t_tag.php:20
+msgid "To cache with check"
+msgstr "Кэшировать с проверкой"
+
+#: pages/t_autor.php:21 pages/t_category.php:21 pages/t_index.php:21
+#: pages/t_page.php:21 pages/t_search.php:21 pages/t_single.php:21
+#: pages/t_tag.php:21
+msgid "Do not cache"
+msgstr "Не кэшировать"
+
+#: pages/t_autor.php:26 pages/t_category.php:26 pages/t_index.php:26
+#: pages/t_page.php:26 pages/t_search.php:26 pages/t_single.php:26
+#: pages/t_tag.php:26
+msgid "Time for Cache"
+msgstr "Время жизни кэша"
+
+#: pages/t_autor.php:28 pages/t_category.php:28 pages/t_index.php:28
+#: pages/t_page.php:28 pages/t_search.php:28 pages/t_single.php:28
+#: pages/t_tag.php:28
+#, php-format
+msgid "The entered time must be in the format %sHH:ii:ss%s"
+msgstr "Формат времени должен быть в формате %sчч:мм:сс%s"
+
+#: pages/tabel_head.php:2
+msgid "File"
+msgstr "Файл"
+
+#: pages/tabel_head.php:3
+msgid "HTTP header"
+msgstr "Заголовки HTTP"
+
+#: pages/tabel_head.php:4
+msgid "Configuring headers"
+msgstr "Настройка заголовков"
+
+#: pages/tabel_head.php:5
+msgid "The result sent HTTP headers"
+msgstr "Результат посылаемых зоголовков"
+
+#: seo_http_headers.class.php:81
+#, php-format
+msgid "This plugin requires PHP version %sTo return back%s"
+msgstr "Этот плагин требует версию PHP %sВернуться обратно%s"
+
+#: seo_http_headers.class.php:96
+msgid "General settings"
+msgstr "Главные настройки"
+
+#: seo_http_headers.class.php:123
+msgid "The problem AJAX request!"
+msgstr "Проблема в AJAX запросе!"
+
+#: seo_http_headers.class.php:142
+msgid "Error in data verification !!!"
+msgstr "Ошибка при проверке данных!!!"
+
+#: seo_http_headers.class.php:155
+msgid "Error"
+msgstr "Ошибка"
+
+#: seo_http_headers.class.php:267
+msgid "Settings"
+msgstr "Настройки"
+
+#: seo_http_headers.class.php:278
+msgid "Donate"
+msgstr "Пожертвовать"
