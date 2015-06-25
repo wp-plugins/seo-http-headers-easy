@@ -14,7 +14,7 @@ Sends the correct HTTP headers to the client
 
 = ENG =
 
-The plugin allows you to send the Last-Modified and Сache-Сontrol - headers protocol HTTP which sent by the principle: "client - server - client." The absence of certain titles may adversely affect the indexing of your site in search engine or even get banned for incorrectly sent of headers. This category are just the headlines, such as the Last-Modified and Sache-Control actuators. The plugin allows you to flexibly manage data of headers for each of these pages: Home, Single, Page, Author, Category, Tag, Search. For more details you can read on the page of plug-in and  page of its full version.
+The plugin allows you to send the Last-Modified and Сache-Сontrol - headers protocol HTTP which sent by the principle: "client - server - client." The absence of certain titles may adversely affect the indexing of your site in search engine or even get banned for incorrectly sent of headers. This category are just the headlines, such as the Last-Modified and Sache-Control actuators. The plugin allows you to flexibly manage data of headers for each of these pages: Home, Single, Page, Author, Category, Tag, Search. For more details you can read on the [page of plugin](http://avkproject.ru/useful-articles/headers-in-wordpress.html) and  page of its [full version](http://avkproject.ru/plugins/seo-headers-full.html).
 
 = RUS =
 
