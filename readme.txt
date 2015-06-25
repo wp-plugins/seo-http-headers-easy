@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: Smiling_Hemp
-Donate link: goo.gl/zwzfod
+Donate link: goo.gl/qnrM08
 Tags: http, protocol, http1.1, headers, heading, cache-control, last-modified, seo, seo-http-headers-easy, Post, page
 Requires at least: 3.5.1
 Tested up to: 4.2.2
@@ -20,7 +20,7 @@ The plugin allows you to send the Last-Modified and Сache-Сontrol - headers pr
 
 Плагин дает возможность отправлять заголовки Last-Modified и Сache-Сontrol – заголовки HTTP протокола, посылаемые по принципу: «клиент – сервер – клиент».  Отсутствие определенных заголовков может негативно сказаться на индексации вашего сайта поисковой системой или вообще получить бан за не корректно отправленные заголовки. К этой категории как раз и относятся заголовки, такие как Last-Modified и Сache-Сontrol. Плагин позволяет гибко управлять настройками данных заголовков для каждой из этих страниц: Home, Single, Page, Author, Category, Tag, Search. Более подроно вы можете почитать на [странице плагина](http://avkproject.ru/useful-articles/headers-in-wordpress.html) и на странице его [полной версии](http://avkproject.ru/plugins/seo-headers-full.html).
 
-> If you like the plugin, feel free to rate it (on the right side of this page) or [donate via PayPal](http://goo.gl/zwzfod). Thanks a lot!)
+> If you like the plugin, feel free to rate it (on the right side of this page) or [donate via PayPal](http://goo.gl/qnrM08). Thanks a lot!)
 
 = Warning =
 
