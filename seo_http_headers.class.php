@@ -279,8 +279,8 @@ class Seo_Http_Head{
 		$baseName = plugin_basename( __FILE__ );
         
 		if($file == $baseName) {
-			$links[] = '<a href="http://goo.gl/zwzfod">' . __('Donate', self::slug) . '</a>';
-            //$links[] = '<a href="#" target="_blank">F.A.Q.</a>';
+			$links[] = '<a href="http://goo.gl/qnrM08">' . __('Donate', self::slug) . '</a>';
+            $links[] = '<a href="https://wordpress.org/plugins/seo-http-headers-easy/faq/" target="_blank">F.A.Q.</a>';
 		}
         
 		return $links;
