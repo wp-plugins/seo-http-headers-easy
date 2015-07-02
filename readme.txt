@@ -4,7 +4,7 @@ Donate link: goo.gl/qnrM08
 Tags: http, protocol, http1.1, headers, heading, cache-control, last-modified, seo, seo-http-headers-easy, Post, page
 Requires at least: 3.5.1
 Tested up to: 4.2.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,3 +63,6 @@ In most cases this happens because of the fact that the user has set all options
 
 = 1.0.0 =
 * first version
+
+= 1.0.1 =
+* Deleting header Author-Plugin

@@ -4,7 +4,7 @@
  * 	Plugin URI: http://avkproject.ru/useful-articles/headers-in-wordpress.html
  *  Description: Отправляет клиенту корректные заголовки HTTP протокола
  * 	Author: Smiling_Hemp
- * 	Version: 1.0.0
+ * 	Version: 1.0.1
  * 	Author URI: https://profiles.wordpress.org/smiling_hemp#content-plugins
  */
 
@@ -42,13 +42,34 @@ class Seo_Http_Head{
         $this->plPath = plugin_dir_path(__FILE__);
         $this->arrKey = array('lm','cc','cctm','ping');
         $this->setOptions = array(
-            "index"   => array("indexlm"=>"set","indexcc"=>"no-store","indexcctm"=>"0","indexping"=>"unset"),
-            "single"  => array("singlelm"=>"set","singlecc"=>"no-store","singlecctm"=>"0","singleping"=>"unset"),
-            "page"    => array("pagelm"=>"set","pagecc"=>"no-store","pagecctm"=>"0","pageping"=>"unset"),
-            "author"  => array("authorlm"=>"set","authorcc"=>"no-store","authorcctm"=>"0","authorping"=>"unset"),
-            "category"=> array("catlm"=>"set","catcc"=>"no-store","catcctm"=>"0","catping"=>"unset"),
-            "tag"     => array("taglm"=>"set","tagcc"=>"no-store","tagcctm"=>"0","tagping"=>"unset"),
-            "search"  => array("searchlm"=>"set","searchcc"=>"no-store","searchcctm"=>"0","searchping"=>"unset")
+            "index"   => array( "indexlm"   => "set",
+                                "indexcc"   => "no-store",
+                                "indexcctm" => "0",
+                                "indexping" => "unset" ),
+            "single"  => array( "singlelm"   => "set",
+                                "singlecc"   => "no-store",
+                                "singlecctm" => "0",
+                                "singleping" => "unset" ),
+            "page"    => array( "pagelm"   => "set",
+                                "pagecc"   => "no-store",
+                                "pagecctm" => "0",
+                                "pageping" => "unset" ),
+            "author"  => array( "authorlm"   => "set",
+                                "authorcc"   => "no-store",
+                                "authorcctm" => "0",
+                                "authorping" => "unset" ),
+            "category"=> array( "catlm"   => "set",
+                                "catcc"   => "no-store",
+                                "catcctm" => "0",
+                                "catping" => "unset" ),
+            "tag"     => array( "taglm"   => "set",
+                                "tagcc"   => "no-store",
+                                "tagcctm" => "0",
+                                "tagping" => "unset" ),
+            "search"  => array( "searchlm"   => "set",
+                                "searchcc"   => "no-store",
+                                "searchcctm" => "0",
+                                "searchping" => "unset" )
         );
         $this->getOptions = get_option(self::settings);
         $this->jsArr = array(
@@ -101,21 +122,23 @@ class Seo_Http_Head{
         if($page == 'post-new.php' || $page == 'post.php'){
             wp_enqueue_style( self::slug . '-style', $this->plUrl . 'css/admin-style.css', array( 'wp-admin' ), '1.10.1' );
         }
-        if($_GET['page'] == self::slug){
-            wp_enqueue_style( self::slug . '-style', $this->plUrl . 'css/admin-style.css', array('wp-admin'),'1.0.0');            
-            wp_enqueue_style( self::slug . '-style-ui', $this->plUrl . 'css/jquery-ui.min.css', array('wp-admin'),'1.10.1');
-            wp_enqueue_script( 'jquery' );
-            wp_enqueue_script( 'jquery-ui-core',      null, array( 'jquery' ) );
-            wp_enqueue_script( 'jquery-ui-tabs',      null, array( 'jquery', 'jquery-ui-core' ) );
-            wp_enqueue_script( 'jquery-ui-slider',    null, array( 'jquery', 'jquery-ui-core' ) );
-            wp_enqueue_script( 'jquery-effects-core', null, array( 'jquery', 'jquery-ui-core' ) );
-            wp_enqueue_script( 'jquery-effects-drop', null, array( 'jquery', 'jquery-ui-core', 'jquery-effects-core' ) );
-            wp_enqueue_script( self::slug . '-script', $this->plUrl . 'js/script.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-tabs', 'jquery-effects-core' ),'1.0.7');
-            wp_enqueue_script( self::slug . '-script-ajax', $this->plUrl . 'js/ajax.js', array('jquery'), '1.0.1' );
-            wp_localize_script(self::slug . '-script-ajax', 'httpVar', array( 'dateHttp'  => date('d.m.Y'),
-                                                                              'nonceHttp' => wp_create_nonce('http-nonce'),
-                                                                              'action'    => self::func,
-                                                                              'setMyTime' => $this->jsArr ) );
+        if( isset( $_GET['page'] ) ){
+            if( $_GET['page'] == self::slug){
+                wp_enqueue_style( self::slug . '-style', $this->plUrl . 'css/admin-style.css', array('wp-admin'),'1.0.0');            
+                wp_enqueue_style( self::slug . '-style-ui', $this->plUrl . 'css/jquery-ui.min.css', array('wp-admin'),'1.10.1');
+                wp_enqueue_script( 'jquery' );
+                wp_enqueue_script( 'jquery-ui-core',      null, array( 'jquery' ) );
+                wp_enqueue_script( 'jquery-ui-tabs',      null, array( 'jquery', 'jquery-ui-core' ) );
+                wp_enqueue_script( 'jquery-ui-slider',    null, array( 'jquery', 'jquery-ui-core' ) );
+                wp_enqueue_script( 'jquery-effects-core', null, array( 'jquery', 'jquery-ui-core' ) );
+                wp_enqueue_script( 'jquery-effects-drop', null, array( 'jquery', 'jquery-ui-core', 'jquery-effects-core' ) );
+                wp_enqueue_script( self::slug . '-script', $this->plUrl . 'js/script.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-tabs', 'jquery-effects-core' ),'1.0.7');
+                wp_enqueue_script( self::slug . '-script-ajax', $this->plUrl . 'js/ajax.js', array('jquery'), '1.0.1' );
+                wp_localize_script(self::slug . '-script-ajax', 'httpVar', array( 'dateHttp'  => date('d.m.Y'),
+                                                                                  'nonceHttp' => wp_create_nonce('http-nonce'),
+                                                                                  'action'    => self::func,
+                                                                                  'setMyTime' => $this->jsArr ) );
+            }
         }
 	}
     
@@ -219,7 +242,6 @@ class Seo_Http_Head{
         $cctm = '';
         if($array['cc'] == 'no-cache' || $array['cc'] == 'public')$cctm = ', max-age='.$array["cctm"];
         header( "Cache-Control: " . $array['cc'].$cctm );
-        header( "Author-Plugin: Smiling_Hemp" );
     }
     
     private function _print_headers($array,$echo=true){
