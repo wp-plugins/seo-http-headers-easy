@@ -66,3 +66,6 @@ In most cases this happens because of the fact that the user has set all options
 
 = 1.0.1 =
 * Deleting header Author-Plugin
+
+= 1.1.0 =
+* Last-Modified date tracking engine was reprogrammed to take into account date of the latest comment
