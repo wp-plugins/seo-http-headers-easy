@@ -3,7 +3,7 @@ Contributors: Smiling_Hemp
 Donate link: goo.gl/qnrM08
 Tags: http, protocol, http1.1, headers, heading, cache-control, last-modified, seo, seo-http-headers-easy, Post, page
 Requires at least: 3.5.1
-Tested up to: 4.2.3
+Tested up to: 4.2.4
 Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
